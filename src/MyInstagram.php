@@ -7,9 +7,11 @@ class MyInstagram
 {
 	public function __construct() {
 		$this->instagram = new Instagram(array(
-		    'apiKey'      => 'YOUR_APP_KEY',
-		    'apiSecret'   => 'YOUR_APP_SECRET',
-		    'apiCallback' => 'YOUR_APP_CALLBACK'
+		    'apiKey'      => '639d8639828c4c49906589d7a742ecd4',
+		    'apiSecret'   => 'ca70b620c5ec452dadd34b5128769ea2',
+		    'apiCallback' => 'http://localhost'
 		));
 	}
+	
+	
 }
