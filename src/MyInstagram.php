@@ -6,12 +6,17 @@ use MetzWeb\Instagram\Instagram;
 class MyInstagram 
 {
 	public function __construct() {
+
+		$ini_array = parse_ini_file("config.ini");
 		$this->instagram = new Instagram(array(
-		    'apiKey'      => '639d8639828c4c49906589d7a742ecd4',
-		    'apiSecret'   => 'ca70b620c5ec452dadd34b5128769ea2',
-		    'apiCallback' => 'http://localhost'
+		    'apiKey'      => $ini_array['apiKey'],
+		    'apiSecret'   => $ini_array['apiSecret'],
+		    'apiCallback' => $ini_array['apiCallback']
 		));
-	}
+
 	
+
+	}
+
 	
 }
